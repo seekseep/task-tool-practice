@@ -1,0 +1,6 @@
+type Task @model @auth (rules: [{ allow: owner }]) {
+  id: ID!
+  name: String!
+  description: String
+  deletedAt: AWSDateTime
+}
